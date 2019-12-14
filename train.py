@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
 
-from model import TrackModel
+from model_linear import TrackModel
 from utils.dataset import JSONTrackDataset
 from utils.transformations import position_displacement, add_noise
 
