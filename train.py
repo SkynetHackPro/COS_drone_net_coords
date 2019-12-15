@@ -13,8 +13,8 @@ from model_linear import TrackModel
 from utils.dataset import JSONTrackDataset
 from utils.transformations import position_displacement, add_noise
 
+EPOCHS_COUNT = 400
 FRAMES_COUNT = 4
-EPOCHS_COUNT = 200
 LEARNING_RATE = 1e-4
 META_LEN = 0
 FORCE_CPU = False
