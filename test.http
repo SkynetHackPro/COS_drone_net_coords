@@ -8,6 +8,40 @@ Content-Type: application/json
 {
   "data": [
     {
+      "x": 636,
+      "y": 142,
+      "w": 47,
+      "h": 36
+    },
+    {
+      "x": 656,
+      "y": 150,
+      "w": 44,
+      "h": 32
+    },
+    {
+      "x": 683,
+      "y": 158,
+      "w": 42,
+      "h": 32
+    },
+    {
+      "x": 702,
+      "y": 165,
+      "w": 43,
+      "h": 31
+    }
+  ]
+}
+
+###
+# BG
+POST http://127.0.0.1:5000/api/predict
+Content-Type: application/json
+
+{
+  "data": [
+    {
       "x": 1507,
       "y": 464,
       "w": 13,
