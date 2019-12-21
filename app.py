@@ -1,5 +1,5 @@
 import json
-from flask import Response
+from flask import Response, send_from_directory
 from flask import Flask
 from flask import request
 
@@ -19,3 +19,13 @@ def test():
     payload = request.get_json()
     model_results = predict.predict(payload['data'])
     return Response(json.dumps(model_results), mimetype='application/json')
+
+
+@app.route('/main.js')
+def send_js():
+    return send_from_directory('dist', 'main.js')
+
+
+@app.route('/')
+def send_index():
+    return send_from_directory('dist', 'index.html')
