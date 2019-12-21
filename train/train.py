@@ -9,9 +9,9 @@ from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
 
-from model_linear import TrackModel
-from utils.dataset import JSONTrackDataset
-from utils.transformations import position_displacement, add_noise
+from train.model_linear import TrackModel
+from train.utils.dataset import JSONTrackDataset
+from train.utils.transformations import position_displacement, add_noise
 
 EPOCHS_COUNT = 400
 FRAMES_COUNT = 4
