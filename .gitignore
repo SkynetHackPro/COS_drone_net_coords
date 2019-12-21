@@ -1,0 +1,12 @@
+.idea
+.ipynb_checkpoints
+.python-version
+__pycache__
+trash
+runs
+data_4
+data_8
+data_raw
+data_small
+dataset_fat
+
