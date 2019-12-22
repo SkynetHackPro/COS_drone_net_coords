@@ -1,21 +1,12 @@
-# coords_pub
-
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+### Требования
+Python 3.6.3
+### Руководоство по запуску:
 ```
+pip install -r requirements.txt
+```
+```shell script
+FLASK_APP=app.py flask run
+```
+В браузере открываем http://localhost:5000/
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
