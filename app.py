@@ -26,6 +26,11 @@ def send_js():
     return send_from_directory('dist', 'main.js')
 
 
+@app.route('/main.css')
+def send_css():
+    return send_from_directory('dist', 'main.css')
+
+
 @app.route('/')
 def send_index():
     return send_from_directory('dist', 'index.html')

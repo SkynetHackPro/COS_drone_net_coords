@@ -22,14 +22,15 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
-            options: {url: false},
+            options: { url: false },
           }
-        ]
+        ],
       }
     ]
   },
   plugins: [
     new VueLoaderPlugin(),
+    new MiniCssExtractPlugin({}),
     new HtmlWebpackPlugin({
       title: 'COS example',
       inject: false,

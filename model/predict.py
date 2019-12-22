@@ -24,4 +24,4 @@ def predict(data):
     t = data_to_tensor(data)
     model = load_model()
     pred = model(t)
-    return {'drone': float(torch.nn.functional.softmax(pred, dim=1).data.cpu().numpy()[0][1])}
+    return {'drone': '{:.10f}'.format(float(torch.nn.functional.softmax(pred, dim=1).data.cpu().numpy()[0][1]))}
